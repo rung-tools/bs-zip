@@ -1,11 +1,11 @@
 {
   "name": "bs-zip",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
-    "prepublish": "bsb -make-world && rollup -c rollup.config.js"
+    "prepublish": "npm run build"
   },
   "keywords": [
     "BuckleScript"
