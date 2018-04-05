@@ -28,7 +28,7 @@ let () =
     zip
     |> Zip.folder "things"
     |> Zip.folder "stuff"
-    |> Zip.get_file "something.txt"
+    |> Zip.get "something.txt"
     >>| Zip.Object.get_contents
     >>| Js.Promise.then_ (fun x -> Js.log x |> resolve)
     |> resolve)
